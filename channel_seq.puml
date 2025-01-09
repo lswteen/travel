@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+인터넷망채널 -> L7스위치: 채널 여행 항공,숙박,패키지 조회
+L7스위치 -> L7스위치 : SSL 인증
+L7스위치 -> 게이트웨이 : API Request
+게이트웨이 -> 게이트웨이 : route에 포함된 채널 domain URI 체크\n게이트웨이필터링 처리
+게이트웨이 -> OCP라우터 : 여행 POD 라우터 이동
+OCP라우터 -> LocaOCP : 여행 서비스 route 연결
+
+LocaOCP -> Pod: 여행 API request
+Pod --> LocaOCP : Response
+LocaOCP --> OCP라우터 : Response
+OCP라우터 --> 게이트웨이 : Response
+게이트웨이 --> L7스위치 : Response
+L7스위치 --> 인터넷망채널 : Response
+@enduml

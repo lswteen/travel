@@ -1,0 +1,15 @@
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/app/hotel/service/HotelWebService.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/app/hotel/controller/dto/HotelResponse.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/config/SwaggerConfig.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/app/hotel/controller/HotelController.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/domain/hotel/model/Hotel.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/domain/hotel/repository/HotelRepository.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/config/DataSourceConfig.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/config/RoutingDataSource.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/domain/hotel/entity/HotelEntity.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/domain/hotel/mapper/HotelMapper.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/domain/hotel/service/HotelService.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/TourApplication.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/app/hotel/mapper/HotelWebMapper.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/app/hotel/controller/dto/HotelRequest.java
+/Users/milk/workspace/travel/travel-api/src/main/java/com/lottecard/travel/config/DataSourceAspect.java

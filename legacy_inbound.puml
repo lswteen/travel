@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Enduser -> InBoundProxy: Loca 카드 조회
+InBoundProxy -> InBoundProxy : URI 체크
+InBoundProxy -> LocaOCP : Loca OCP에 등록된\nRoute Proxy Request
+
+LocaOCP -> Pod: Loca PC, Mobile, App API URI call
+Pod --> LocaOCP : Response
+LocaOCP --> InBoundProxy : Response
+InBoundProxy --> Enduser : Response
+
+@enduml

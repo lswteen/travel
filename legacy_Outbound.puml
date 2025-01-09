@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Pod -> LocaOCP: Loca Pod(도메인) 아맥스 힐튼 API 요청
+LocaOCP -> OutBoundProxy: OCP 라우트처리
+
+OutBoundProxy -> partner: 라우트 파트너 매핑
+partner -> partner : Partner 힐튼 API 처리
+partner --> OutBoundProxy : Response
+OutBoundProxy --> LocaOCP : Response
+LocaOCP --> Pod : Response
+@enduml
