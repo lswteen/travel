@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-01-09T20:03:11+0900",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 23 (Homebrew)"
+    date = "2025-01-09T20:14:15+0900",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.41.0.v20241217-1506, environment: Java 17.0.13 (Eclipse Adoptium)"
 )
 @Component
 public class HotelWebMapperImpl implements HotelWebMapper {
@@ -23,10 +23,10 @@ public class HotelWebMapperImpl implements HotelWebMapper {
 
         hotelResponse.createdAt( map( hotel.createdAt() ) );
         hotelResponse.updatedAt( map( hotel.updatedAt() ) );
+        hotelResponse.capacity( hotel.capacity() );
+        hotelResponse.description( hotel.description() );
         hotelResponse.id( hotel.id() );
         hotelResponse.name( hotel.name() );
-        hotelResponse.description( hotel.description() );
-        hotelResponse.capacity( hotel.capacity() );
 
         return hotelResponse.build();
     }
