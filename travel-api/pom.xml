@@ -21,6 +21,31 @@
     <junit.version>3.8.1</junit.version>
   </properties>
 
+  <!--build-->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring.boot.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+            <configuration>
+              <classifier>exec</classifier>
+              <mainClass>com.lottecard.travel.TourApplication</mainClass>
+              <includeSystemScope>true</includeSystemScope>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+
+
   <dependencies>
     <!-- gateway common domain -->
     <dependency>

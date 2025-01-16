@@ -103,3 +103,17 @@ step-hts-server HTS dummy SERVER 구성
 127.0.0.1 hts.com
 ```
 
+## RUN 실행
+```text
+-Dspring.profiles.active=dev \
+
+java -jar \
+-Xms1024m \
+-Xmx2048m \
+-XX:+UseG1GC \
+-XX:G1HeapRegionSize=32M \
+-XX:+UseStringDeduplication \
+-XX:+HeapDumpOnOutOfMemoryError \
+-XX:HeapDumpPath=/tmp/heap-dump.hprof \
+travel-api/target/travel-api-1.0-SNAPSHOT-exec.jar
+```
