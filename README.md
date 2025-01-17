@@ -29,6 +29,144 @@ gateway/                   <-- 루트 프로젝트 (Parent)
 │   ├── pom.xml            <-- 모듈 POM  
 │   └── src/main/java      <-- Java 소스 코드  
 
+├── common-eai/                       # EAI 통신 모듈
+│   ├── pom.xml
+│   └── src/main/java/com/lottecard/common/eai
+│       ├── client/                   # Feign Client 인터페이스
+│       │   ├── eai제공 기능도메인/
+│       │   │   └── FlightEaiClient.java
+│       │   └── point/
+│       │       └── PointEaiClient.java
+│       ├── config/                   # EAI 관련 설정
+│       │   └── EaiFeignConfig.java
+│       ├── dto/                      # 요청/응답 DTO
+│       │   ├── request/
+│       │   │   ├── FlightRequestDto.java
+│       │   │   └── HotelRequestDto.java
+│       │   └── response/
+│       │       ├── FlightResponseDto.java
+│       │       └── HotelResponseDto.java
+│       └── interceptor/             # 인터셉터
+│           └── EaiFeignInterceptor.java
+
+├── partner-hanatour/                       # EAI 통신 모듈
+│   ├── pom.xml
+│   └── src/main/java/com/lottecard/travel/hanatour
+│       ├── client/                   # Feign Client 인터페이스
+│       │   ├── hotel/
+│       │   │   └── FlightEaiClient.java
+│       │   ├── flight/
+│       │   │   └── FlightEaiClient.java
+│       │   ├── rentcar/
+│       │   │   └── FlightEaiClient.java
+│       │   ├── user/
+│       │   │   └── FlightEaiClient.java
+│       │   └── point/
+│       │       └── PointEaiClient.java
+│       ├── config/                   # EAI 관련 설정
+│       │   └── EaiFeignConfig.java
+│       ├── dto/                      # 요청/응답 DTO
+│       │   ├── request/
+│       │   │   ├── FlightRequestDto.java
+│       │   │   └── HotelRequestDto.java
+│       │   └── response/
+│       │       ├── FlightResponseDto.java
+│       │       └── HotelResponseDto.java
+│       └── interceptor/             # 인터셉터
+│           └── EaiFeignInterceptor.java
+
+── partner-hts/                       # EAI 통신 모듈
+│   ├── pom.xml
+│   └── src/main/java/com/lottecard/travel/hts
+│       ├── client/                   # Feign Client 인터페이스
+│       │   ├── hotel/
+│       │   │   └── FlightEaiClient.java
+│       │   ├── flight/
+│       │   │   └── FlightEaiClient.java
+│       │   ├── rentcar/
+│       │   │   └── FlightEaiClient.java
+│       │   ├── user/
+│       │   │   └── FlightEaiClient.java
+│       │   └── point/
+│       │       └── PointEaiClient.java
+│       ├── config/                   # EAI 관련 설정
+│       │   └── EaiFeignConfig.java
+│       ├── dto/                      # 요청/응답 DTO
+│       │   ├── request/
+│       │   │   ├── FlightRequestDto.java
+│       │   │   └── HotelRequestDto.java
+│       │   └── response/
+│       │       ├── FlightResponseDto.java
+│       │       └── HotelResponseDto.java
+│       └── interceptor/             # 인터셉터
+│           └── EaiFeignInterceptor.java
+
+
+├── travel-api/                       # 항공
+│   ├── pom.xml
+│   └── src/main/java/com/lottecard/travel/app
+│       ├── loca/
+│       │   └── controller
+│       │      └── DTO
+│       │          request
+│       │          response
+│       │   └── controller
+│       │   └── mapper
+│       │   └── service
+│       ├── spa/
+│       │   └── controller
+│       │   └── mapper
+│       │   └── service
+│       ├── mbt/
+│       │   └── controller
+│       │   └── mapper
+│       │   └── service
+
+
+│   └── src/main/java/com/lottecard/travel/domain
+│       ├── 제휴사/  
+│       │   └── entity
+│       │   └── mapper  
+│       │   └── model  
+│       │   └── repository  
+│       │   └── service 
+│       ├── 호텔/  
+│       │   └── entity
+│       │   └── mapper  
+│       │   └── model  
+│       │   └── repository  
+│       │   └── service               
+│       ├── 항공/
+│       │   └── entity
+│       │   └── mapper  
+│       │   └── model  
+│       │   └── repository  
+│       │   └── service                         
+│       ├── 차량/
+│       │   └── entity
+│       │   └── mapper  
+│       │   └── model  
+│       │   └── repository  
+│       │   └── service      
+│       ├── 포인트/
+│       │   └── entity
+│       │   └── mapper  
+│       │   └── model  
+│       │   └── repository  
+│       │   └── service      
+│       ├── 회원/
+│       │   └── entity
+│       │   └── mapper  
+│       │   └── model  
+│       │   └── repository  
+│       │   └── service       
+                  
+
+
+
+
+
+
 ├── travel-api/              <-- tour api  
 │   ├── pom.xml            <-- 모듈 POM  
 │   └── src/main/java      <-- Java 소스 코드 
