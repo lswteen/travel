@@ -9,6 +9,7 @@
   <modules>
     <module>app-common</module>
     <module>travel-api</module>
+    <module>partner-hts</module>
   </modules>
   <!-- 공통 프로퍼티 관리 -->
   <properties>
@@ -82,5 +83,4 @@
       </plugins>
     </pluginManagement>
   </build>
-
 </project>

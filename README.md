@@ -209,6 +209,13 @@ mvn archetype:generate \
     -DartifactId=app-common \
     -DarchetypeArtifactId=maven-archetype-quickstart \
     -DinteractiveMode=false
+    
+mvn archetype:generate \
+    -DgroupId=com.lottecard.travel \
+    -DartifactId=partner-hts \
+    -DarchetypeArtifactId=maven-archetype-quickstart \
+    -DinteractiveMode=false
+        
 ```
 
 ## HTS Dummy Server

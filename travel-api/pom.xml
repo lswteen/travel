@@ -47,10 +47,16 @@
 
 
   <dependencies>
-    <!-- gateway common domain -->
+    <!--  common domain -->
     <dependency>
       <groupId>com.lottecard.travel</groupId>
       <artifactId>app-common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <!-- hts common domain -->
+    <dependency>
+      <groupId>com.lottecard.travel</groupId>
+      <artifactId>partner-hts</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
     <!-- Spring Boot Web Starter -->
